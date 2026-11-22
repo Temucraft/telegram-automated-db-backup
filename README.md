@@ -1,3 +1,8 @@
+> **Temucraft:** we run `temucraft_backup.py` (nightly at 05:00 by `acore-backup.timer`, or by hand). It backs up every
+> realm database, the MySQL binary logs and the system journal to our Telegram group with a bot, keeps local copies
+> 30 days in `/root/AzerothCore/Backups/DD_MM_YYYY_HH-MM-SS_<automatic|manual>/`, and purges the binary logs and old
+> journal only after every upload worked. Settings: `/root/AzerothCore/telegram-backup.env`.
+
 # Telegram automated db backup
 
 ![Telegram automated db backup](icon.png)
